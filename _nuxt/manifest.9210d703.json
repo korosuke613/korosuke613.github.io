@@ -1,7 +1,7 @@
 {
   "name": "Korosuke613@miyazaki",
   "short_name": "K613",
-  "description": "[![CircleCI](https://circleci.com/gh/korosuke613/myHomepage/tree/master.svg?style=svg)](https://circleci.com/gh/korosuke613/myHomepage/tree/master)",
+  "description": "[![CircleCI](https://circleci.com/gh/korosuke613/myHomepage/tree/main.svg?style=svg)](https://circleci.com/gh/korosuke613/myHomepage/tree/main)",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.6c2278.png",
