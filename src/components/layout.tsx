@@ -1,18 +1,26 @@
 import * as React from "react";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
 
-const MainLayout: React.FC = ({ children }) => (
-  <div
-    style={{
-      margin: `0 auto`,
-      marginBottom: 1.5,
-      marginTop: 1.5,
-      maxWidth: 650,
-      paddingLeft: 3 / 4,
-      paddingRight: 3 / 4,
-    }}
-  >
-    {children}
-  </div>
-);
+const MainLayout: React.FC = ({ children }) => {
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  const theme = React.useMemo(
+    () =>
+      createMuiTheme({
+        palette: {
+          type: prefersDarkMode ? "dark" : "light",
+        },
+      }),
+    [prefersDarkMode]
+  );
+
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      {children}
+    </ThemeProvider>
+  );
+};
 
 export default MainLayout;
