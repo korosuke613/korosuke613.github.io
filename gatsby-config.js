@@ -8,4 +8,4 @@ module.exports = {
     // You only need to explicitly define it here if you need to configure
     // specific options in it
   ],
-}
+};

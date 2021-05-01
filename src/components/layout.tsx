@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 const MainLayout: React.FC = ({ children }) => (
   <div
@@ -13,6 +13,6 @@ const MainLayout: React.FC = ({ children }) => (
   >
     {children}
   </div>
-)
+);
 
-export default MainLayout
+export default MainLayout;
