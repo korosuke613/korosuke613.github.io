@@ -1,7 +1,7 @@
 module.exports = {
   parser: `@typescript-eslint/parser`,
-  extends: ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended", "plugin:react/recommended"],
-  plugins: ["prettier"],
+  extends: ["plugin:prettier/recommended", "plugin:react/recommended"],
+  plugins: ["@typescript-eslint", "prettier"],
   parserOptions: {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
     sourceType: "module", // Allows for the use of imports
