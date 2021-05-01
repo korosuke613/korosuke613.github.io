@@ -36,6 +36,9 @@ export default class IndexPage extends React.Component<IndexPageProps> {
           This site is named <strong>{siteName}</strong>
         </p>
         <Source description="Interested in details of this site?" />
+        <button className="focus:outline-none text-sm w-24 py-3 rounded-md font-semibold text-white bg-blue-500 ring-0">
+          ring-0
+        </button>
       </Layout>
     );
   }
