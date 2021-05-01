@@ -1,42 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `korosuke613/futa-hirakoba`,
+    siteName: `Using TypeScript Example`,
+    exampleUrl: `https://github.com/gatsbyjs/gatsby/tree/master/examples/using-typescript`,
   },
   plugins: [
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `aaaa`,
-      },
-    },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        icon: `src/images/icon.png`,
-      },
-    },
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `./src/images/`,
-      },
-      __key: `images`,
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pages`,
-        path: `./src/pages/`,
-      },
-      __key: `pages`,
-    },
+    // `gatsby-plugin-typescript` is automatically included in gatsby
+    // You only need to explicitly define it here if you need to configure
+    // specific options in it
   ],
 }
